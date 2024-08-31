@@ -141,9 +141,7 @@ function ListBox() {
 
 function WatchedBox() {
   const [watched, setWatched] = useState(tempWatchedData)
-
   const [isOpen2, setIsOpen2] = useState(true)
-
   const avgImdbRating = average(watched.map((movie) => movie.imdbRating))
   const avgUserRating = average(watched.map((movie) => movie.userRating))
   const avgRuntime = average(watched.map((movie) => movie.runtime))
@@ -178,7 +176,6 @@ function WatchedBox() {
               </p>
             </div>
           </div>
-
           <ul className="list">
             {watched.map((movie) => (
               <li key={movie.imdbID}>
