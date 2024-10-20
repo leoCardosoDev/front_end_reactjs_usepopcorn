@@ -36,6 +36,7 @@ export default function StarRating({
     setRating(rating);
     onSetRating(rating);
   }
+
   const textStyle = {
     lineHeight: "1",
     margin: "0",
